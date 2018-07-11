@@ -1,0 +1,14 @@
+<page>
+<view class="container">
+<view class="userInfo">
+<view>{{motto}}</view>
+
+<!-- <text class="userInfo-nickname">1111</text> -->
+</view>
+
+
+
+
+
+</view>
+</page>

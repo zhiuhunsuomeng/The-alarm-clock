@@ -1,0 +1,20 @@
+var app = getApp()
+Page({
+  data:{
+    motto:'测试成功',
+    uderInfo:{}
+  },
+  bindViewTap:function(){
+    wx.navigateTo({
+      url:'../logs/logs'
+    })
+  },
+  onLoad:function(){
+    console.log("onLoad")
+    app.getUserInfo(function(userInfo){
+      that.setData({
+        userInfo:userInfo
+      })
+    })
+  }
+})
